@@ -53,6 +53,7 @@ O pandas é amplamente utilizado em análise de dados, ciência de dados e engen
 * Após criar a série, calculamos a média das idades usando o método mean() e a exibimos na saída.
 * A saída do código mostra a série de idades e a média das idades do grupo. Esse é um exemplo simples de como você pode usar o pandas para realizar cálculos em dados estruturados.
 
+---
 ## 3.0 - MANIPULAÇÃO DE DADOS EM PANDA:
 ### Métodos para leitura e escrita da biblioteca pandas:
 * Os métodos de leitura de dados estruturados no pandas têm em comum o prefixo “pd.read_XXXX”, sendo “pd” um, aliás frequentemente utilizado ao importar a biblioteca e “XXX” a parte restante da sintaxe específica de cada método. Além da leitura, o pandas oferece diversos métodos para escrever os dados contidos em um DataFrame em arquivos, bancos de dados ou até mesmo para a área de transferência do sistema operacional. Isso torna o pandas uma ferramenta versátil para lidar com dados estruturados, independentemente de sua origem.
@@ -60,7 +61,6 @@ O pandas é amplamente utilizado em análise de dados, ciência de dados e engen
 ### 3.1 - Captura e transformação dos dados:
 * A etapa de captura e transformação/padronização dos dados é uma parte crucial no processo de análise de dados e modelagem de machine learning, por exemplo. Nessa fase, você coleta os dados brutos de várias fontes, como arquivos CSV, bancos de dados, APIs, e os prepara para uma análise posterior. O pandas é uma biblioteca Python muito útil para realizar essas tarefas, pois fornece estruturas de dados flexíveis e ferramentas poderosas para manipular e transformar dados.
 * O primeiro passo para o desenvolvimento desse processo é importar o pandas. Em seguida, utilizamos o método para ler um arquivo JSON. Por fim, pedimos informações sobre esse DataFrame: existem 9.379 registros, 2 colunas, os índices são numéricos e variam de 0 a 9.378; não existem linhas faltantes, pois existem 9.379 registros não nulos; os dados são do tipo “object”, ou são todos strings, ou há uma mistura desses tipos.
----
 * Já conhecemos nosso DataFrame. Agora, vamos verificar a duplicidade de linhas (um passo muito importante) utilizando a função drop_duplicates(). No nosso exemplo, usaremos: df_selic.drop_duplicates(keep='last', inplace=True), que mantém o último registro (keep='last') e, a partir do parâmetro inplace=True, faz com que a transformação seja salva do DataFrame. Na prática, estamos sobrescrevendo o objeto na memória. Nesse caso, não existem linhas duplicadas.
 * Outra ação que podemos efetuar é criar uma nova coluna no DataFrame. Para isso, a sintaxe é simples: df_[‘nova_coluna’] = dado. No nosso caso, vamos inserir duas colunas, uma com a data da extração dos dados e outra com o responsável pela extração.
 
