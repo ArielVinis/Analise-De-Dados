@@ -2,7 +2,7 @@
 ## Aprendendo e treinando sobre Análise de Dados em Python
 
 ---
-## 1.0 - Aplicação de banco de dados.
+## 1.0 - APLICAÇÃO DE BANCO DE DADOS
   * Python é uma linguagem de programação amplamente utilizada para interagir com sistemas de gerenciamento de banco de dados (SGBD) por meio de bibliotecas como a sqlite3. Essa biblioteca permite a criação, leitura, atualização e exclusão de dados em bancos de dados SQL, seguindo o modelo CRUD (Create, Read, Update, Delete). Com a Python, nós, desenvolvedores, podemos desenvolver aplicativos que se comunicam de forma eficaz com bancos de dados relacionais, proporcionando flexibilidade e escalabilidade para nossas aplicações.
 ###  Conexão com banco de dados:
 * Quando desenvolvemos uma aplicação em uma linguagem de programação que precisa interagir com um Sistema Gerenciador de Banco de Dados Relacional (RDBMS), é essencial estabelecer uma conexão entre esses dois processos distintos. Depois que a conexão é estabelecida, podemos enviar comandos SQL para realizar operações no banco de dados. Para viabilizar essa comunicação entre a linguagem de programação e o RDBMS, fazemos uso de tecnologias como Open Database Connectivity (ODBC) e Java Database Connectivity (JDBC).
@@ -28,7 +28,7 @@ O comando CREATE TABLE é um exemplo de DDL (Data Definition Language, ou Lingua
 * 1.6 - O objetivo foi criar a tabela “Contatos” para armazenar informações de contatos, incluindo nome, e-mail e número de telefone.
 
 ---
-## 2.0 - Biblioteca Pandas
+## 2.0 - BIBLIOTECA PANDAS
 ### Introdução:
 * pandas é uma poderosa biblioteca de código aberto para a linguagem de programação Python criada para facilitar a manipulação e análise de dados tabulares e séries temporais. Ela fornece estruturas de dados flexíveis e eficientes, como DataFrames e Series, que permitem aos desenvolvedores trabalhar com dados de forma mais intuitiva e produtiva. Algumas características notáveis do panda incluem:
 
@@ -54,7 +54,7 @@ O pandas é amplamente utilizado em análise de dados, ciência de dados e engen
 * A saída do código mostra a série de idades e a média das idades do grupo. Esse é um exemplo simples de como você pode usar o pandas para realizar cálculos em dados estruturados.
 
 ---
-## 3.0 - MANIPULAÇÃO DE DADOS EM PANDA:
+## 3.0 - MANIPULAÇÃO DE DADOS EM PANDA
 ### Métodos para leitura e escrita da biblioteca pandas:
 * Os métodos de leitura de dados estruturados no pandas têm em comum o prefixo “pd.read_XXXX”, sendo “pd” um, aliás frequentemente utilizado ao importar a biblioteca e “XXX” a parte restante da sintaxe específica de cada método. Além da leitura, o pandas oferece diversos métodos para escrever os dados contidos em um DataFrame em arquivos, bancos de dados ou até mesmo para a área de transferência do sistema operacional. Isso torna o pandas uma ferramenta versátil para lidar com dados estruturados, independentemente de sua origem.
 
@@ -69,3 +69,24 @@ O pandas é amplamente utilizado em análise de dados, ciência de dados e engen
 
 ### 3.2 - Sobre a Aplicação:
 * Criamos um DataFrame com dados fictícios. Observe que temos duas linhas duplicadas e, após excluir uma delas, ficamos com quatro itens, sendo que somente o produto B do vestuário tem valor acima de R$ 50,00.
+
+---
+## 4.0 - VISUALIZAÇÃO DE DADOS
+### 4.1 - Matplotlib
+* A biblioteca Matplotlib exerce uma função central na criação de gráficos em Python, sendo amplamente adotada em projetos de visualização de dados. John Hunter é o criador e uma figura-chave para o desenvolvimento dessa biblioteca, que surge como uma alternativa ao uso de ferramentas como gnuplot e MATLAB na comunidade científica. Anteriormente, os cientistas tinham que gerar gráficos em outros softwares após extrair os resultados de suas análises, fato que tornava o processo incômodo. Assim, a biblioteca Matplotlib emergiu como uma solução eficiente para criar visualizações em Python.
+* A instalação do Matplotlib pode ser facilmente realizada com o comando “pip install matplotlib”. Em ambientes como Anaconda e Google Colab, essa biblioteca já está prontamente disponível. O módulo “pyplot” é uma parte essencial do Matplotlib, pois disponibiliza funções que facilitam a criação e personalização de gráficos. Duas sintaxes comuns para importar o Matplotlib com o apelido “plt” são: “import matplotlib.pyplot as plt” e “from matplotlib import pyplot as plt”
+* Existem duas formas de criar o gráfico:
+  1. O pyplot cria e gerencia automaticamente figuras e eixos, e usa as funções do pyplot para plotagem.
+  2. Criar explicitamente figuras e eixos, e chamar métodos sobre eles (o “estilo orientado a objetos (OO)”).
+
+### 4.2 - Biblioteca pandas
+* Conheci muitas funcionalidades da biblioteca pandas; uma delas diz respeito à visualização gráfica. As principais estruturas de dados da biblioteca pandas (Series e DataFrame) possuem o método plot(), construído com base no Matplotlib que permite criar gráficos a partir dos dados nas estruturas.
+
+### 4.3 - Biblioteca Seaborn
+* O Seaborn, uma biblioteca Python construída sobre a base do Matplotlib, destaca-se na criação de gráficos de forma especializada. Você pode usar essa biblioteca importando-a em seus projetos da seguinte forma: “import seaborn as sns”. Uma característica notável do Seaborn é seu repositório de conjuntos de dados prontos para uso, o que facilita a exploração das funcionalidades. Você pode acessar esses conjuntos de dados em [seaborn-data](https://github.com/mwaskom/seaborn-data). Para ilustrar, foi carregado dados sobre gorjetas (tips) e utilizado em nosso estudo. O Seaborn simplifica a criação de gráficos e as análises de dados, mostrando-se uma ferramenta valiosa para a visualização de informações.
+
+### 4.4 - Aplicação com DataSet
+* Utilizado o DataSet sobre gorjeta apresentado nesta etapa de aprendizagem.
+* Consegui verificar que o gasto no jantar é bem superior ao gasto no almoço. Mas quantos clientes almoçaram e quantos jantaram? Investigado o gasto médio por período.
+* Entendi que a média gasta no jantar também é superior à do almoço. Logo, esse é o principal período do restaurante em relação a faturamento. Por fim, foi verificado a média de gorjeta por período.
+* A média de gorjeta no jantar também é superior à do almoço.
