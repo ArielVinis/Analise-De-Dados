@@ -107,3 +107,5 @@ O pandas é amplamente utilizado em análise de dados, ciência de dados e engen
 * Agora, vamos atualizar as informações de um funcionário específico, simulando a operação de “Update”.
 ### 5.6 - Deletar um funcionário
 * Por fim, vamos deletar um funcionário da tabela, simulando a operação de “Delete”.
+
+# <center> Fim
